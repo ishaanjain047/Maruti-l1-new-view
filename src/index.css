@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+:root {
+  --bg: #e8eaee;
+  --surface: #ffffff;
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  --text-muted: #9ca3af;
+  --primary-blue: #2563eb;
+  
+  --p1-red: #dc2626;
+  --p1-bg: #fef2f2;
+  --p2-orange: #c2410c;
+  --p2-bg: #fff7ed;
+  --p3-amber: #b45309;
+  --p3-bg: #fffbeb;
+  --p4-green: #15803d;
+  --p4-bg: #f0fdf4;
+  
+  --internal-amber: #d97706;
+  --internal-bg: #fffbeb;
+  --internal-border: #fde68a;
+  
+  --purple-accent: #7c3aed;
+  --purple-bg: #f5f3ff;
+  
+  --border: #e4e7ec;
+  --border-subtle: #f0f2f5;
+  
+  --header-dark: #18202f;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.card-shadow {
+  box-shadow: 0 1px 3px rgba(0,0,0,.09), 0 4px 12px rgba(0,0,0,.06);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
